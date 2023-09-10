@@ -1,0 +1,178 @@
+border-radius can be applied on all sides.
+Property	Description
+border-radius	A shorthand property for setting all the four border-*-*-radius properties
+
+border-top-left-radius	Defines the shape of the border of the top-left corner
+border-top-right-radius	Defines the shape of the border of the top-right corner
+border-bottom-right-radius	Defines the shape of the border of the bottom-right corner
+border-bottom-left-radius	Defines the shape of the border of the bottom-left corner
+
+// class 2 on colors
+RGBA Colors
+RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity for a color.
+
+An RGBA color value is specified with: rgba(red, green, blue, alpha). The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).
+
+rgba(255, 0, 0, 0.2);
+
+HSL Colors
+HSL stands for Hue, Saturation and Lightness.
+
+An HSL color value is specified with: hsl(hue, saturation, lightness).
+
+Hue is a degree on the color wheel (from 0 to 360):
+0 (or 360) is red
+120 is green
+240 is blue
+Saturation is a percentage value: 100% is the full color.
+Lightness is also a percentage; 0% is dark (black) and 100% is white.
+
+HSLA Colors
+HSLA color values are an extension of HSL color values with an alpha channel - which specifies the opacity for a color.
+
+An HSLA color value is specified with: hsla(hue, saturation, lightness, alpha), where the alpha parameter defines the opacity. The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).
+
+class 3  CSS Shadow Effects
+With CSS you can add shadow to text and to elements.
+
+text-shadow
+box-shadow
+
+The CSS box-shadow property is used to apply one or more shadows to an element
+
+//class 3
+
+The CSS @font-face Rule
+Web fonts allow Web designers to use fonts that are not installed on the user's computer.
+
+When you have found/bought the font you wish to use, just include the font file on your web server, and it will be automatically downloaded to the user when needed.
+
+Your "own" fonts are defined within the CSS @font-face rule.
+
+hen you have found/bought the font you wish to use, just include the font file on your web server, and it will be automatically downloaded to the user when needed.
+
+Your "own" fonts are defined within the CSS @font-face rule.
+
+Different Font Formats
+
+TrueType Fonts (TTF)
+
+TrueType is a font standard developed in the late 1980s, by Apple and Microsoft. TrueType is the most common font format for both the Mac OS and Microsoft Windows operating systems.
+
+OpenType Fonts (OTF)
+
+OpenType is a format for scalable computer fonts. It was built on TrueType, and is a registered trademark of Microsoft. OpenType fonts are used commonly today on the major computer platforms.
+
+The Web Open Font Format (WOFF)
+
+WOFF is a font format for use in web pages. It was developed in 2009, and is now a W3C Recommendation. WOFF is essentially OpenType or TrueType with compression and additional metadata. The goal is to support font distribution from a server to a client over a network with bandwidth constraints.
+
+The Web Open Font Format (WOFF 2.0)
+
+TrueType/OpenType font that provides better compression than WOFF 1.0.
+
+SVG Fonts/Shapes
+
+SVG fonts allow SVG to be used as glyphs when displaying text. The SVG 1.1 specification define a font module that allows the creation of fonts within an SVG document. You can also apply CSS to SVG documents, and the @font-face rule can be applied to text in SVG documents.
+
+Embedded OpenType Fonts (EOT)
+
+EOT fonts are a compact form of OpenType fonts designed by Microsoft for use as embedded fonts on web pages.
+
+// topic :
+
+CSS Text Overflow, Word Wrap, Line Breaking Rules, and Writing Modes
+text-overflow
+word-wrap
+word-break
+writing-mode
+
+//class4 combinators
+
+Selector	    Example	    Example description
+element element	    div p	Selects all <p> elements inside <div> elements
+element>element	    div > p	Selects all <p> elements where the parent is a <div> element
+element+element	    div + p	Selects the first <p> element that are placed immediately after <div> elements
+element1~element2	p ~ ul	Selects every <ul> element that are preceded by a <p> element
+
+
+What are Pseudo-classes?
+A pseudo-class is used to define a special state of an element.
+
+For example, it can be used to:
+
+Style an element when a user mouses over it
+Style visited and unvisited links differently
+Style an element when it gets focus.
+
+Syntax
+The syntax of pseudo-classes:
+
+selector:pseudo-class {
+  property: value;
+}
+
+//----------
+ class5
+CSS - The :lang Pseudo-class
+The :lang pseudo-class allows you to define special rules for different languages.
+
+In the example below, :lang defines the quotation marks for <q> elements with lang="no":
+
+//---------
+
+What are Pseudo-Elements?
+A CSS pseudo-element is used to style specified parts of an element.
+
+For example, it can be used to:
+
+Style the first letter, or line, of an element
+Insert content before, or after, the content of an element
+Syntax
+The syntax of pseudo-elements:
+
+selector::pseudo-element {
+  property: value;
+}
+
+//-------------
+Note: The ::first-line pseudo-element can only be applied to block-level elements.
+
+The following properties apply to the ::first-line pseudo-element:
+
+font properties
+color properties
+background properties
+word-spacing
+letter-spacing
+text-decoration
+vertical-align
+text-transform
+line-height
+clear
+Notice the double colon notation - ::first-line versus :first-line
+
+The double colon replaced the single-colon notation for pseudo-elements in CSS3. This was an attempt from W3C to distinguish between pseudo-classes and pseudo-elements.
+
+Animations
+
+
+Start the Exercise
+
+CSS Animation Properties
+The following table lists the @keyframes rule and all the CSS animation properties:
+
+Property	Description
+@keyframes	                Specifies the animation code
+animation	                  A shorthand property for setting all the animation properties
+animation-delay             Specifies a delay for the start of an animation
+animation-direction	        Specifies whether an animation should be played forwards, backwards or in alternate cycles
+animation-duration	        Specifies how long time an animation should take to complete one cycle
+animation-fill-mode	        Specifies a style for the element when the animation is not playing (before it starts, after it ends, or both)
+animation-iteration-count	  Specifies the number of times an animation should be played
+animation-name	`           Specifies the name of the @keyframes animation
+animation-play-state	      Specifies whether the animation is running or paused
+animation-timing-function	  Specifies the speed curve of the animation
+
+
+grid, media queries, variables, units conversions, image styles fade, 
